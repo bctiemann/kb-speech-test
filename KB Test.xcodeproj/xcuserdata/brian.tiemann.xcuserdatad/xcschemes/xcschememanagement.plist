@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>KB Test Keyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>KB Test.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>BAB62B741C31A01700E25EEC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAB62B8A1C31A07B00E25EEC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -15,6 +15,12 @@
 		BAB62B641C31A01700E25EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB62B621C31A01700E25EEC /* LaunchScreen.storyboard */; };
 		BAB62B6F1C31A01700E25EEC /* KB_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB62B6E1C31A01700E25EEC /* KB_TestTests.m */; };
 		BAB62B7A1C31A01700E25EEC /* KB_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB62B791C31A01700E25EEC /* KB_TestUITests.m */; };
+		BAB62B8F1C31A07B00E25EEC /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB62B8E1C31A07B00E25EEC /* KeyboardViewController.m */; };
+		BAB62B931C31A07B00E25EEC /* KB Test Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BAB62B8B1C31A07B00E25EEC /* KB Test Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BAB62BA11C31C56A00E25EEC /* nag01.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BAB62B9E1C31C56A00E25EEC /* nag01.m4a */; };
+		BAB62BA21C31C56A00E25EEC /* nag02.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BAB62B9F1C31C56A00E25EEC /* nag02.m4a */; };
+		BAB62BA31C31C56A00E25EEC /* nag03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BAB62BA01C31C56A00E25EEC /* nag03.m4a */; };
+		BAB62BA51C31C5FC00E25EEC /* sound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BAB62BA41C31C5FC00E25EEC /* sound.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +38,28 @@
 			remoteGlobalIDString = BAB62B501C31A01600E25EEC;
 			remoteInfo = "KB Test";
 		};
+		BAB62B911C31A07B00E25EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAB62B491C31A01600E25EEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAB62B8A1C31A07B00E25EEC;
+			remoteInfo = "KB Test Keyboard";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAB62B971C31A07B00E25EEC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BAB62B931C31A07B00E25EEC /* KB Test Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BAB62B511C31A01600E25EEC /* KB Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KB Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +78,14 @@
 		BAB62B751C31A01700E25EEC /* KB TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KB TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB62B791C31A01700E25EEC /* KB_TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KB_TestUITests.m; sourceTree = "<group>"; };
 		BAB62B7B1C31A01700E25EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB62B8B1C31A07B00E25EEC /* KB Test Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KB Test Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB62B8D1C31A07B00E25EEC /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		BAB62B8E1C31A07B00E25EEC /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		BAB62B901C31A07B00E25EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB62B9E1C31C56A00E25EEC /* nag01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nag01.m4a; sourceTree = "<group>"; };
+		BAB62B9F1C31C56A00E25EEC /* nag02.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nag02.m4a; sourceTree = "<group>"; };
+		BAB62BA01C31C56A00E25EEC /* nag03.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nag03.m4a; sourceTree = "<group>"; };
+		BAB62BA41C31C5FC00E25EEC /* sound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +110,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAB62B881C31A07B00E25EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +126,7 @@
 				BAB62B531C31A01600E25EEC /* KB Test */,
 				BAB62B6D1C31A01700E25EEC /* KB TestTests */,
 				BAB62B781C31A01700E25EEC /* KB TestUITests */,
+				BAB62B8C1C31A07B00E25EEC /* KB Test Keyboard */,
 				BAB62B521C31A01600E25EEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +137,7 @@
 				BAB62B511C31A01600E25EEC /* KB Test.app */,
 				BAB62B6A1C31A01700E25EEC /* KB TestTests.xctest */,
 				BAB62B751C31A01700E25EEC /* KB TestUITests.xctest */,
+				BAB62B8B1C31A07B00E25EEC /* KB Test Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +184,20 @@
 			path = "KB TestUITests";
 			sourceTree = "<group>";
 		};
+		BAB62B8C1C31A07B00E25EEC /* KB Test Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BAB62B8D1C31A07B00E25EEC /* KeyboardViewController.h */,
+				BAB62B8E1C31A07B00E25EEC /* KeyboardViewController.m */,
+				BAB62B901C31A07B00E25EEC /* Info.plist */,
+				BAB62B9E1C31C56A00E25EEC /* nag01.m4a */,
+				BAB62B9F1C31C56A00E25EEC /* nag02.m4a */,
+				BAB62BA01C31C56A00E25EEC /* nag03.m4a */,
+				BAB62BA41C31C5FC00E25EEC /* sound.m4a */,
+			);
+			path = "KB Test Keyboard";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +208,12 @@
 				BAB62B4D1C31A01600E25EEC /* Sources */,
 				BAB62B4E1C31A01600E25EEC /* Frameworks */,
 				BAB62B4F1C31A01600E25EEC /* Resources */,
+				BAB62B971C31A07B00E25EEC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BAB62B921C31A07B00E25EEC /* PBXTargetDependency */,
 			);
 			name = "KB Test";
 			productName = "KB Test";
@@ -196,6 +256,23 @@
 			productReference = BAB62B751C31A01700E25EEC /* KB TestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BAB62B8A1C31A07B00E25EEC /* KB Test Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB62B941C31A07B00E25EEC /* Build configuration list for PBXNativeTarget "KB Test Keyboard" */;
+			buildPhases = (
+				BAB62B871C31A07B00E25EEC /* Sources */,
+				BAB62B881C31A07B00E25EEC /* Frameworks */,
+				BAB62B891C31A07B00E25EEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KB Test Keyboard";
+			productName = "KB Test Keyboard";
+			productReference = BAB62B8B1C31A07B00E25EEC /* KB Test Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +284,7 @@
 				TargetAttributes = {
 					BAB62B501C31A01600E25EEC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = AUWUF2B39A;
 					};
 					BAB62B691C31A01700E25EEC = {
 						CreatedOnToolsVersion = 7.2;
@@ -215,6 +293,10 @@
 					BAB62B741C31A01700E25EEC = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = BAB62B501C31A01600E25EEC;
+					};
+					BAB62B8A1C31A07B00E25EEC = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = AUWUF2B39A;
 					};
 				};
 			};
@@ -234,6 +316,7 @@
 				BAB62B501C31A01600E25EEC /* KB Test */,
 				BAB62B691C31A01700E25EEC /* KB TestTests */,
 				BAB62B741C31A01700E25EEC /* KB TestUITests */,
+				BAB62B8A1C31A07B00E25EEC /* KB Test Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +343,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB62B891C31A07B00E25EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB62BA31C31C56A00E25EEC /* nag03.m4a in Resources */,
+				BAB62BA11C31C56A00E25EEC /* nag01.m4a in Resources */,
+				BAB62BA51C31C5FC00E25EEC /* sound.m4a in Resources */,
+				BAB62BA21C31C56A00E25EEC /* nag02.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +386,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAB62B871C31A07B00E25EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB62B8F1C31A07B00E25EEC /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,6 +406,11 @@
 			isa = PBXTargetDependency;
 			target = BAB62B501C31A01600E25EEC /* KB Test */;
 			targetProxy = BAB62B761C31A01700E25EEC /* PBXContainerItemProxy */;
+		};
+		BAB62B921C31A07B00E25EEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAB62B8A1C31A07B00E25EEC /* KB Test Keyboard */;
+			targetProxy = BAB62B911C31A07B00E25EEC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -413,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "KB Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.KB-Test";
@@ -424,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "KB Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.KB-Test";
@@ -479,6 +588,32 @@
 			};
 			name = Release;
 		};
+		BAB62B951C31A07B00E25EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "KB Test Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.KB-Test.KB-Test-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BAB62B961C31A07B00E25EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "KB Test Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.KB-Test.KB-Test-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -512,6 +647,14 @@
 			buildConfigurations = (
 				BAB62B851C31A01700E25EEC /* Debug */,
 				BAB62B861C31A01700E25EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAB62B941C31A07B00E25EEC /* Build configuration list for PBXNativeTarget "KB Test Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB62B951C31A07B00E25EEC /* Debug */,
+				BAB62B961C31A07B00E25EEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

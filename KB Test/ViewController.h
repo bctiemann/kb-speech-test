@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    IBOutlet UITextView *inputTextView;
+    IBOutlet UIButton *btnDismiss;
+}
 
 
 @end
