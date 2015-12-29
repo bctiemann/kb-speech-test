@@ -57,22 +57,8 @@
 }
 
 - (void)speakMessage {
-//    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString: @"Please don't text and drive."];
-//    [self.synthesizer speakUtterance:utterance];
-    
-    NSError *error;
-    NSString *audioPath = [[NSBundle mainBundle] pathForResource:@"nag01" ofType:@"m4a"];
-/*
-    NSURL *audioURL = [NSURL fileURLWithPath:audioPath];
-    self.backgroundMusicPlayer = [[AVAudioPlayer alloc]
-                                  initWithContentsOfURL:audioURL error:&error];
-    [self.backgroundMusicPlayer prepareToPlay];
-    [self.backgroundMusicPlayer play];
-*/
-    
-    SystemSoundID soundID;
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: audioPath], &soundID);
-    AudioServicesPlaySystemSound (soundID);
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString: @"I am a message."];
+    [self.synthesizer speakUtterance:utterance];
 }
 
 - (void)didReceiveMemoryWarning {
